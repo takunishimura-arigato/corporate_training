@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/corporate-training-site/index.html"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/corporate-training-site/$1"
+        }
+    ]
+}

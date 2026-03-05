@@ -1,0 +1,209 @@
+/* Home Specific Styles */
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(26, 41, 66, 0.7), rgba(26, 41, 66, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 80px;
+    /* Offset for header */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Intro Section */
+.intro {
+    background-color: var(--bg-alt-color);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-lead {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.intro-text {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+/* Why Us Section */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 162, 91, 0.1);
+    color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 24px;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.benefit-card p {
+    font-size: 15px;
+    color: var(--text-light);
+    text-align: left;
+}
+
+/* Programs Overview Section */
+.programs-overview {
+    background-color: var(--bg-alt-color);
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.program-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.program-image {
+    height: 240px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+.program-content {
+    padding: 30px;
+}
+
+.program-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: rgba(26, 41, 66, 0.1);
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.program-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.program-desc {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+.program-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.program-link span {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.program-link:hover span {
+    transform: translateX(4px);
+}
+
+.programs-cta {
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 992px) {
+
+    .benefits-grid,
+    .program-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .benefits-grid,
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+}

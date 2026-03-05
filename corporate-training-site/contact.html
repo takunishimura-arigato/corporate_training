@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ・資料請求｜SOW EXPERIENCE 企業研修</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flow-contact.css">
+</head>
+
+<body style="background-color: var(--bg-alt-color);">
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                SOW EXPERIENCE <span>企業研修サービス</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="concept.html">コンセプト</a></li>
+                    <li><a href="program.html">研修プログラム</a></li>
+                    <li><a href="modelcase.html">モデルケース</a></li>
+                    <li><a href="flow.html">導入の流れ・FAQ</a></li>
+                    <li class="header-cta"><a href="contact.html" class="btn btn-primary"
+                            style="background-color: var(--primary-color);">資料ダウンロード</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="padding-bottom: 20px;">
+            <div class="container">
+                <div class="section-title">
+                    <span class="en">Contact</span>
+                    <h1 class="ja">お問い合わせ・資料請求</h1>
+                </div>
+                <p style="text-align: center; color: var(--text-light);">
+                    プログラムの詳細資料や、貴社の課題に合わせたプランのご提案など、<br>
+                    下記フォームよりお気軽にお問い合わせください。
+                </p>
+            </div>
+        </section>
+
+        <section class="section-padding" style="padding-top: 0; padding-bottom: 120px;">
+            <div class="container">
+                <div class="contact-form-container">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">お問い合わせの種類 <span class="req">必須</span></label>
+                            <div
+                                style="display: flex; gap: 20px; align-items: center; padding: 16px; border: 1px solid #ddd; border-radius: 4px; background: var(--bg-alt-color);">
+                                <label
+                                    style="display: flex; align-items: center; cursor: pointer; color: var(--text-color);">
+                                    <input type="radio" name="type" value="資料請求" checked
+                                        style="margin-right: 8px; width: 18px; height: 18px;">
+                                    資料請求
+                                </label>
+                                <label
+                                    style="display: flex; align-items: center; cursor: pointer; color: var(--text-color);">
+                                    <input type="radio" name="type" value="相談・お問い合わせ"
+                                        style="margin-right: 8px; width: 18px; height: 18px;">
+                                    相談・お問い合わせ
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="company">貴社名 <span class="req">必須</span></label>
+                            <input type="text" id="company" class="form-control" placeholder="例：ソウ・エクスペリエンス株式会社">
+                        </div>
+
+                        <div class="form-group" style="display: flex; gap: 20px;">
+                            <div style="flex: 1;">
+                                <label class="form-label" for="name_last">ご担当者様名（姓） <span class="req">必須</span></label>
+                                <input type="text" id="name_last" class="form-control" placeholder="例：山田">
+                            </div>
+                            <div style="flex: 1;">
+                                <label class="form-label" for="name_first">ご担当者様名（名） <span class="req">必須</span></label>
+                                <input type="text" id="name_first" class="form-control" placeholder="例：太郎">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">メールアドレス <span class="req">必須</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="例：info@sowxp.co.jp">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">電話番号</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="例：03-xxxx-xxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">お問い合わせ内容・相談したいこと</label>
+                            <textarea id="message" class="form-control"
+                                placeholder="想定している対象人数や課題感、興味のあるプログラムなどがあればご記入ください。"></textarea>
+                        </div>
+
+                        <div style="text-align: center; margin: 40px 0 20px;">
+                            <label style="cursor: pointer; color: var(--text-light); font-size: 14px;">
+                                <input type="checkbox" required style="margin-right: 8px;">
+                                <a href="https://corporate.sowxp.co.jp/privacy" target="_blank"
+                                    style="text-decoration: underline;">プライバシーポリシー</a>に同意する
+                            </label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="button" class="btn btn-primary"
+                                style="width: 100%; max-width: 300px; padding: 20px; font-size: 18px;">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">SOW EXPERIENCE Inc.</div>
+                    <p>ソウ・エクスペリエンス株式会社<br>東京都渋谷区千駄ヶ谷3-4-9</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="concept.html">コンセプト</a></li>
+                        <li><a href="program.html">研修プログラム</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="modelcase.html">モデルケース</a></li>
+                        <li><a href="flow.html">導入の流れ・FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                        <li><a href="https://corporate.sowxp.co.jp/" target="_blank">コーポレートサイト</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 SOW EXPERIENCE Inc. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

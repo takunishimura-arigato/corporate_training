@@ -1,0 +1,138 @@
+/* Concept Page Specific Styles */
+
+.page-header {
+    padding: 160px 0 80px;
+    background-color: var(--bg-alt-color);
+    text-align: center;
+}
+
+.concept-intro {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 80px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.concept-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+.concept-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.concept-text {
+    flex: 1;
+}
+
+.concept-text h3 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+}
+
+.concept-text p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.concept-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.concept-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Learning Model */
+.learning-model {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 100px 0;
+    margin-bottom: 120px;
+}
+
+.learning-model .section-title h2 {
+    color: var(--white);
+}
+
+.learning-model .section-title .en {
+    color: var(--accent-color);
+}
+
+.model-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.model-step {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.model-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-en);
+    margin-bottom: 24px;
+}
+
+.model-step h4 {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.model-step p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+
+    .concept-section,
+    .concept-section:nth-child(even) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .model-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .model-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .concept-text h3 {
+        font-size: 24px;
+    }
+}

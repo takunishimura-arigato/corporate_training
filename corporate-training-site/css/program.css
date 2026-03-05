@@ -1,0 +1,95 @@
+/* Program Page Specific Styles */
+
+.programs-list {
+    padding-top: 60px;
+}
+
+.program-detail-card {
+    display: flex;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-bottom: 60px;
+}
+
+.program-detail-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.pd-image {
+    flex: 1;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.pd-content {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pd-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+
+.pd-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+}
+
+.pd-desc {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.pd-features {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.pd-features li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.pd-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+
+    .program-detail-card,
+    .program-detail-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .pd-image {
+        min-height: 300px;
+    }
+
+    .pd-content {
+        padding: 40px 20px;
+    }
+}
